@@ -1,0 +1,7 @@
+#!/bin/bash
+sudo yum update -y
+sudo yum install httpd -y
+sudo wget https://blue-bucket-20210708.s3.ap-northeast-2.amazonaws.com/web.zip -P /var/www/html/
+sudo unzip /var/www/html/web.zip -d /var/www/html
+sudo systemctl restart httpd
+sudo systmectl enable httpd
