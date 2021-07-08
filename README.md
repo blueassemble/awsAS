@@ -1,0 +1,2 @@
+# awsAS
+autoscale
